@@ -1,15 +1,28 @@
 cls
 @echo off
 :start
-@echo Enable or Disable Write Blocking
-@echo This is done by adding or deleting registry keys in:
-@echo HKLM\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices and
-@echo HKLM\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies
-@echo.
+TITLE Registry USB Write Blocker - v1.2
+ECHO Registry USB Write Blocker - v1.2
+ECHO.
+ECHO.
+ECHO This tool will allow you to enable and disable write-blocking
+ECHO of USB devices using Registry keys in 
+ECHO SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices and
+ECHO SYSTEM\CurrentControlSet\Control\
+ECHO ---------------------------------------------------------------
+ECHO If you have any questions - visit https://github.com/fetchered/
+ECHO ---------------------------------------------------------------
+ECHO.
+ECHO E - Enable USB Write Blocking
+ECHO.
+ECHO D - Disable USB Write Blocking
+ECHO.
+ECHO Q - Quit this script
+ECHO.  
 
 color 09
 
-set /p choice="Write-Blocking options: [D]isable,[E]nable,[Q]uit "
+set /p choice="Write-Blocking options: [D]isable,[E]nable,[Q]uit: "
 if /I "%choice%"=="Q" goto quit
 if /I "%choice%"=="E" goto enable
 if /I "%choice%"=="D" goto disable
