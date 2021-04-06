@@ -9,9 +9,9 @@ ECHO This tool will allow you to enable and disable write-blocking
 ECHO of USB devices using Registry keys in 
 ECHO SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices and
 ECHO SYSTEM\CurrentControlSet\Control\
-ECHO ---------------------------------------------------------------
-ECHO If you have any questions - visit https://github.com/fetchered/
-ECHO ---------------------------------------------------------------
+ECHO -------------------------------------------------------------------
+ECHO If you have any questions - visit https://github.com/digitalsleuth/
+ECHO -------------------------------------------------------------------
 ECHO.
 ECHO E - Enable USB Write Blocking
 ECHO.
